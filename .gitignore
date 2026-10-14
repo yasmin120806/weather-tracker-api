@@ -3,6 +3,10 @@
 # dependencies
 node_modules/
 
+#database
+weather.db
+
+
 # Expo
 .expo/
 dist/
@@ -35,3 +39,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+#backend
+backend/.env
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/weather.db

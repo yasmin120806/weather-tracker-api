@@ -11,7 +11,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "usesCleartextTraffic": true
     },
     "web": {
       "bundler": "metro",
@@ -24,10 +25,19 @@
       "expo-font",
       "@react-native-community/datetimepicker",
       "expo-splash-screen",
-      "expo-status-bar"
+      "expo-video",
+      "expo-sqlite",
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "ios": {
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        }
+      }
     }
   }
 }

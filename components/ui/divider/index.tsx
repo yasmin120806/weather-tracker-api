@@ -3,6 +3,12 @@ import React from 'react';
 import { tva } from '@gluestack-ui/utils/nativewind-utils';
 import { Platform, View } from 'react-native';
 import type { VariantProps } from '@gluestack-ui/utils/nativewind-utils';
+import { styled } from 'nativewind';
+
+const DividerBase = styled(View, {
+  // default base classes can be passed as the second argument
+  base: 'h-[1px] w-full bg-slate-200',
+} as any) as React.ForwardRefExoticComponent<React.PropsWithoutRef<React.ComponentProps<typeof View>> & React.RefAttributes<any>>;
 
 const dividerStyle = tva({
   base: 'bg-border',
@@ -14,6 +20,7 @@ const dividerStyle = tva({
   },
 });
 
+
 type IUIDividerProps = React.ComponentPropsWithoutRef<typeof View> &
   VariantProps<typeof dividerStyle>;
 
@@ -22,7 +29,7 @@ const Divider = React.forwardRef<
   IUIDividerProps
 >(function Divider({ className, orientation = 'horizontal', ...props }, ref) {
   return (
-    <View
+    <DividerBase
       ref={ref}
       {...props}
       aria-orientation={orientation}

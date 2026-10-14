@@ -32,6 +32,16 @@
     --ring: 212 212 212;
     --accent: 247 247 247;
     --accent-foreground: 52 52 52;
+    --weather-sky: 104 179 244;
+    --weather-sky-deep: 13 72 145;
+    --weather-panel: 5 45 99;
+    --weather-glass: 22 86 154;
+    --weather-edge: 151 211 255;
+    --weather-sheet: 248 250 252;
+    --weather-sheet-muted: 239 244 249;
+    --weather-ink: 11 31 52;
+    --weather-on-sky: 255 255 255;
+    --weather-on-sky-muted: 194 218 242;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -119,4 +129,14 @@
   --color-ring: rgb(var(--ring));
   --color-accent: rgb(var(--accent));
   --color-accent-foreground: rgb(var(--accent-foreground));
+  --color-weather-sky: rgb(var(--weather-sky));
+  --color-weather-sky-deep: rgb(var(--weather-sky-deep));
+  --color-weather-panel: rgb(var(--weather-panel));
+  --color-weather-glass: rgb(var(--weather-glass));
+  --color-weather-edge: rgb(var(--weather-edge));
+  --color-weather-sheet: rgb(var(--weather-sheet));
+  --color-weather-sheet-muted: rgb(var(--weather-sheet-muted));
+  --color-weather-ink: rgb(var(--weather-ink));
+  --color-weather-on-sky: rgb(var(--weather-on-sky));
+  --color-weather-on-sky-muted: rgb(var(--weather-on-sky-muted));
 }
